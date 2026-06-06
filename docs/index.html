@@ -1,5 +1,201 @@
-<html>
-  <body>
-    <h1>Market Agent Report</h1>
-  </body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>US Downside Positioning Monitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 24px;
+            background: #f6f7f9;
+            color: #222;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        h1 {
+            margin-bottom: 4px;
+        }
+        .meta {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .headline {
+            padding: 18px;
+            border-radius: 10px;
+            background: #f0f2f5;
+            margin-bottom: 24px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .main-status {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 28px;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: right;
+        }
+        th:first-child, td:first-child,
+        th:last-child, td:last-child {
+            text-align: left;
+        }
+        th {
+            background: #f0f0f0;
+        }
+        .badge {
+            color: white;
+            padding: 5px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .alert {
+            background: #b00020;
+        }
+        .caution {
+            background: #c77700;
+        }
+        .watch {
+            background: #4f6bed;
+        }
+        .normal {
+            background: #2e7d32;
+        }
+        .chart-section {
+            margin-top: 34px;
+        }
+        .chart-section h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        img {
+            width: 100%;
+            max-width: 1100px;
+            margin: 14px 0 28px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .note {
+            margin-top: 32px;
+            color: #666;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>US Downside Positioning Monitor</h1>
+        <div class="meta">
+            CFTC TFF Report Date: 2026-06-02<br>
+            Generated at: 2026-06-06 18:54:13
+        </div>
+
+        <div class="headline">
+            <div class="main-status">Overall Status: ALERT / 95/100</div>
+            ES / S&P 500: ALERT 95/100 - Fresh short build<br>NQ / NASDAQ 100: ALERT 75/100 - Fresh short build<br>RTY / RUSSELL 2000: CAUTION 65/100 - Long liquidation / risk-off
+        </div>
+
+        <h2>Summary Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Asset</th>
+                    <th>Status</th>
+                    <th>Score</th>
+                    <th>Lev Net</th>
+                    <th>WoW Net</th>
+                    <th>WoW Long</th>
+                    <th>WoW Short</th>
+                    <th>OI Chg</th>
+                    <th>Short Ratio</th>
+                    <th>Setup</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td>ES / S&P 500</td>
+            <td><span class="badge alert">ALERT</span></td>
+            <td>95</td>
+            <td>-500,732</td>
+            <td>-42,952</td>
+            <td>10,351</td>
+            <td>53,303</td>
+            <td>55,610</td>
+            <td>80.5%</td>
+            <td>Fresh short build</td>
+        </tr>
+        
+        <tr>
+            <td>NQ / NASDAQ 100</td>
+            <td><span class="badge alert">ALERT</span></td>
+            <td>75</td>
+            <td>-53,650</td>
+            <td>-1,971</td>
+            <td>4,295</td>
+            <td>6,266</td>
+            <td>11,982</td>
+            <td>66.0%</td>
+            <td>Fresh short build</td>
+        </tr>
+        
+        <tr>
+            <td>RTY / RUSSELL 2000</td>
+            <td><span class="badge caution">CAUTION</span></td>
+            <td>65</td>
+            <td>-73,340</td>
+            <td>-5,128</td>
+            <td>-7,919</td>
+            <td>-2,791</td>
+            <td>-10,959</td>
+            <td>70.2%</td>
+            <td>Long liquidation / risk-off</td>
+        </tr>
+        
+            </tbody>
+        </table>
+
+        
+        <section class="chart-section">
+            <h2>ES / S&P 500</h2>
+            <img src="latest/es_net_position_vs_sp500.png" alt="ES / S&P 500" />
+<img src="latest/es_long_short_vs_sp500.png" alt="ES / S&P 500" />
+<img src="latest/es_oi_short_ratio_vs_sp500.png" alt="ES / S&P 500" />
+        </section>
+        
+        <section class="chart-section">
+            <h2>NQ / NASDAQ 100</h2>
+            <img src="latest/nq_net_position_vs_nasdaq100.png" alt="NQ / NASDAQ 100" />
+<img src="latest/nq_long_short_vs_nasdaq100.png" alt="NQ / NASDAQ 100" />
+<img src="latest/nq_oi_short_ratio_vs_nasdaq100.png" alt="NQ / NASDAQ 100" />
+        </section>
+        
+        <section class="chart-section">
+            <h2>RTY / RUSSELL 2000</h2>
+            <img src="latest/rty_net_position_vs_russell2000.png" alt="RTY / RUSSELL 2000" />
+<img src="latest/rty_long_short_vs_russell2000.png" alt="RTY / RUSSELL 2000" />
+<img src="latest/rty_oi_short_ratio_vs_russell2000.png" alt="RTY / RUSSELL 2000" />
+        </section>
+        
+
+        <div class="note">
+            Note: CFTC TFF data is weekly and backward-looking. This report is intended for positioning monitoring, not as a standalone trading signal.
+        </div>
+    </div>
+</body>
 </html>
