@@ -102,7 +102,7 @@
         <h1>US Downside Positioning Monitor</h1>
         <div class="meta">
             CFTC TFF Report Date: 2026-06-02<br>
-            Generated at: 2026-06-06 22:00:06
+            Generated at: 2026-06-06 22:07:52
         </div>
 
         <div class="headline">
@@ -193,7 +193,156 @@
         </section>
         
 
-        <div class="note">
+        
+        <section class="chart-section">
+            <h2>FINRA Post-CFTC Short Pressure Overlay</h2>
+
+            <div class="headline">
+                <div class="main-status">
+                    Bridge Status: CONFIRMED / 83.0/100
+                </div>
+                CFTC Score: ALERT 95/100<br>
+                FINRA Max Score: 65/100<br>
+                Elevated Symbols: AVGO, SOXX<br>
+                Alert Symbols: None<br><br>
+                CFTC에서 확인된 하방 포지셔닝 이후, FINRA 기준 일간 short pressure도 높게 나타나 CFTC 기준일 이후에도 하방/헤지 압력이 지속된 것으로 해석됩니다.
+            </div>
+
+            <h3>Post-CFTC 3D Short Pressure</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Status</th>
+                        <th>Score</th>
+                        <th>3D Short Ratio</th>
+                        <th>20D Avg</th>
+                        <th>Spread</th>
+                        <th>Z-score</th>
+                        <th>Spike</th>
+                        <th>Dates</th>
+                        <th>Comment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td>AVGO</td>
+            <td><span class="badge caution">CAUTION</span></td>
+            <td>65</td>
+            <td>48.02%</td>
+            <td>34.96%</td>
+            <td>13.06%p</td>
+            <td>1.62</td>
+            <td>2.62x</td>
+            <td>2026-06-03, 2026-06-04, 2026-06-05</td>
+            <td style="text-align:left;">3D short ratio가 20D 평균보다 10%p 이상 높음, 최신 z-score 1.5 이상, short volume 20D 평균 대비 2배 이상</td>
+        </tr>
+        
+        <tr>
+            <td>SOXX</td>
+            <td><span class="badge caution">CAUTION</span></td>
+            <td>55</td>
+            <td>60.06%</td>
+            <td>62.45%</td>
+            <td>-2.39%p</td>
+            <td>-0.3</td>
+            <td>2.02x</td>
+            <td>2026-06-03, 2026-06-04, 2026-06-05</td>
+            <td style="text-align:left;">3D short ratio 60% 이상, short volume 20D 평균 대비 2배 이상</td>
+        </tr>
+        
+        <tr>
+            <td>QQQ</td>
+            <td><span class="badge watch">WATCH</span></td>
+            <td>35</td>
+            <td>53.32%</td>
+            <td>58.89%</td>
+            <td>-5.57%p</td>
+            <td>-0.54</td>
+            <td>2.35x</td>
+            <td>2026-06-03, 2026-06-04, 2026-06-05</td>
+            <td style="text-align:left;">3D short ratio 50% 이상, short volume 20D 평균 대비 2배 이상</td>
+        </tr>
+        
+        <tr>
+            <td>SPY</td>
+            <td><span class="badge watch">WATCH</span></td>
+            <td>35</td>
+            <td>53.29%</td>
+            <td>50.83%</td>
+            <td>2.45%p</td>
+            <td>0.1</td>
+            <td>1.82x</td>
+            <td>2026-06-03, 2026-06-04, 2026-06-05</td>
+            <td style="text-align:left;">3D short ratio 50% 이상, 3D short ratio가 20D 평균보다 높음, short volume 20D 평균 대비 1.5배 이상</td>
+        </tr>
+        
+        <tr>
+            <td>IWM</td>
+            <td><span class="badge normal">NORMAL</span></td>
+            <td>25</td>
+            <td>58.5%</td>
+            <td>63.91%</td>
+            <td>-5.4%p</td>
+            <td>-0.18</td>
+            <td>1.28x</td>
+            <td>2026-06-03, 2026-06-04, 2026-06-05</td>
+            <td style="text-align:left;">3D short ratio 55% 이상</td>
+        </tr>
+        
+        <tr>
+            <td>SMH</td>
+            <td><span class="badge normal">NORMAL</span></td>
+            <td>25</td>
+            <td>54.03%</td>
+            <td>55.12%</td>
+            <td>-1.09%p</td>
+            <td>-0.16</td>
+            <td>1.98x</td>
+            <td>2026-06-03, 2026-06-04, 2026-06-05</td>
+            <td style="text-align:left;">3D short ratio 50% 이상, short volume 20D 평균 대비 1.5배 이상</td>
+        </tr>
+        
+        <tr>
+            <td>AMD</td>
+            <td><span class="badge normal">NORMAL</span></td>
+            <td>0</td>
+            <td>46.38%</td>
+            <td>49.3%</td>
+            <td>-2.93%p</td>
+            <td>-0.74</td>
+            <td>1.15x</td>
+            <td>2026-06-03, 2026-06-04, 2026-06-05</td>
+            <td style="text-align:left;">특이 신호 약함</td>
+        </tr>
+        
+        <tr>
+            <td>NVDA</td>
+            <td><span class="badge normal">NORMAL</span></td>
+            <td>0</td>
+            <td>38.36%</td>
+            <td>37.95%</td>
+            <td>0.42%p</td>
+            <td>-0.88</td>
+            <td>1.03x</td>
+            <td>2026-06-03, 2026-06-04, 2026-06-05</td>
+            <td style="text-align:left;">특이 신호 약함</td>
+        </tr>
+        
+                </tbody>
+            </table>
+
+            <img src="latest/finra_post_cftc_overlay.png" alt="FINRA Post-CFTC Overlay" />
+
+            <div class="note">
+                FINRA Daily Short Volume은 실제 미상환 숏 잔고가 아니라,
+                해당 거래일의 short sale 보고 거래량 비중입니다.
+                따라서 이 섹션은 CFTC 기준일 이후 숏 압력의 지속 여부를 보는 보조 지표로 사용합니다.
+            </div>
+        </section>
+    
+<div class="note">
             Note: CFTC TFF data is weekly and backward-looking. This report is intended for positioning monitoring, not as a standalone trading signal.
         </div>
     </div>
